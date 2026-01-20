@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clown University</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="clown-form">
+            <form action="https://aw.profbobby.com/api/messages" method="post">
+                <legend>Sign-up for Clown University</legend>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="first-name">First Name</label>
+                    <br>
+                    <input type="text" name="first-name" id="first-name" required placeholder="John">
+                    <br>
+                    <br>
+
+                    <label for="last-name">Last Name</label>
+                    <br>
+                    <input type="text" name="last-name" id="last-name" required placeholder="Doe">
+                    <br>
+                    <br>
+
+                    <label for="birthday">DOB</label>
+                    <br>
+                    <input type="date" name="birthday" id="birthday" required>
+                    <br>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" required placeholder="example@website.com">
+                    <br>
+                    <br>
+                </fieldset>
+                
+                <br>
+
+                <fieldset>
+                    <legend>Clown Information</legend>
+                    <br>
+                    <label for="clown-name">Clown Name</label>
+                    <br>
+                    <input type="text" name="clown-name" id="clown-name" required max="25" placeholder="Charlie Chuckles">
+                    <br>
+                    <br>
+
+                    <label for="joke-type">Joke Expertice</label>
+                    <br>
+                    <label for="physical-joke">Physical Acts</label>
+                    <input type="checkbox" name="physical-joke" id="physical-joke">
+                    <label for="story-joke">Puns/Stories</label>
+                    <input type="checkbox" name="story-joke" id="story-joke">
+                    <label for="prank-joke">Pranks</label>
+                    <input type="checkbox" name="prank-joke" id="prank-joke">
+                </fieldset>
+
+                <label for="password">Password</label>
+                <br>
+                <input 
+                    type="password" name="password" id="password" 
+                    required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                    placeholder="Password"
+                >
+
+                <br>
+                <br>
+                <button onclick="alert('Your information has been noted, honk honk.')" type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </div>
+
+        <div class="clown-pic">
+            <div class="logo-section">
+                <img class="logo" src="images\odin-lined.png" alt="Odin's Project">
+                <p class="new-font">Odin's Jesters</p>
+            </div>
+            <p class="credit">Photo by Ehimetalor Akhere Unuabona, Font by Hawtpixel</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

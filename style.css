@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Rock+Salt&display=swap');
+body {
+   height: 100vh;
+   margin: 0;
+}
+legend {
+    font-weight: bold;
+    font-size: 20px;
+}
+.clown-form {
+    flex: 1;
+    text-align: center;
+}
+.clown-pic {
+    flex: 1;
+    background-image: url(https://images.unsplash.com/photo-1602501348666-c721dadd6e59?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2xvd258ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    align-items: center;
+}
+.logo-section {
+    position: relative;
+    top: 50px;
+    bottom: 70px;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo {
+    width: 150px;
+    height: 150px;
+}
+.new-font{
+    font-family: "Rock Salt", sans-serif;
+    font-size: 40px;
+}
+.credit {
+    color: white;
+    position: fixed;
+    bottom: 15px;
+}
+input:focus {
+    border-color:rgb(45, 45, 239);
+    box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+}
+input:valid {
+    border-color: rgb(23, 110, 23);
+}
+input:invalid {
+    border-color: rgb(174, 54, 54);
+}
+.container {
+    display: flex;
+}
