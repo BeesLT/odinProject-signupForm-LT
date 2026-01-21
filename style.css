@@ -9,7 +9,23 @@ legend {
 }
 .clown-form {
     flex: 1;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #f0f0f0;
+}
+.clown-form form {
+    width: 100%;
+    max-width: 480px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 20px;
+}
+.personal, .clown-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .clown-pic {
     flex: 1;
@@ -21,26 +37,28 @@ legend {
 }
 .logo-section {
     position: relative;
-    top: 50px;
-    bottom: 70px;
+    top: 20%;
+    bottom: 30%;
     width: 100%;
     background: black;
     opacity: 0.6;
     color: white;
+}
+.logo-wrapper {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items:center;
+    gap: 15px;
 }
 .logo {
     width: 150px;
     height: 150px;
 }
-.new-font{
+.logo-font {
     font-family: "Rock Salt", sans-serif;
     font-size: 40px;
 }
 .credit {
-    color: white;
+    color: black;
     position: fixed;
     bottom: 15px;
 }
@@ -54,6 +72,11 @@ input:valid {
 input:invalid {
     border-color: rgb(174, 54, 54);
 }
+input, button {
+    padding: 6px 8px;
+    font-size: 14px;
+}
 .container {
     display: flex;
+    height: 100vh;
 }
